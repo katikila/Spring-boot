@@ -9,8 +9,5 @@ services:
       - "80:8080"
   db:
     image: my-shuttle/db
-    build:
-      context: ./src/db
-      dockerfile: Dockerfile
     expose:
       - "3306"
